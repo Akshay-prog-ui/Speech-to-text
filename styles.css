@@ -1,0 +1,110 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #2d2d2d;
+    margin-bottom: 20px;
+}
+
+/* Form elements */
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+input, select, textarea, button {
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    resize: vertical;
+    font-family: monospace;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #2e7d32;
+}
+
+select {
+    width: 150px;
+}
+
+/* Search field styling */
+#searchInput {
+    width: 300px;
+    font-size: 14px;
+    padding: 8px;
+}
+
+#searchButton {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+#searchButton:hover {
+    background-color: #0056b3;
+}
+
+/* Highlighting for search results */
+.marked {
+    background-color: yellow;
+}
+
+/* Transcription Text area */
+.transcriptionText {
+    font-family: monospace;
+    background-color: #fff;
+    height: 200px;
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.5;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Style the audio/video players */
+audio, video {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}

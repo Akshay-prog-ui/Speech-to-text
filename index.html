@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech-to-Text with Audio/Video Integration</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jsPDF for PDF export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- PizZip and docxtemplater for DOCX export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pizzip/3.1.1/pizzip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.20.0/docxtemplater.js"></script>
+
+    <!-- CryptoJS for encryption -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+
+    <h1>Speech-to-Text, Speaker Identification, Audio/Video Integration, and Search</h1>
+
+    <!-- File upload for audio/video -->
+    <label for="fileInput">Upload Audio/Video File:</label>
+    <input type="file" id="fileInput" accept="audio/*,video/*"><br><br>
+
+    <!-- Search Input Field -->
+    <label for="searchInput">Search Transcript:</label>
+    <input type="text" id="searchInput" placeholder="Search for words or phrases...">
+    <button id="searchButton">Search</button><br><br>
+
+    <!-- Display transcription results -->
+    <div id="transcriptionText" class="transcriptionText" contenteditable="false" placeholder="Transcription will appear here..."></div><br><br>
+
+    <!-- Start button for real-time transcription -->
+    <button id="startListeningButton">Start Listening</button><br><br>
+
+    <!-- Text-to-Speech Input -->
+    <textarea id="textInput" rows="4" cols="50" placeholder="Type text to speak..."></textarea><br>
+    <button id="speakButton">Speak</button><br><br>
+
+    <!-- Language Select for Text-to-Speech -->
+    <select id="languageSelect">
+        <option value="en-US">English (US)</option>
+        <option value="es-ES">Spanish (Spain)</option>
+        <option value="fr-FR">French (France)</option>
+    </select><br><br>
+
+    <!-- Encryption Toggle -->
+    <label for="enableEncryption">Enable Encryption:</label>
+    <input type="checkbox" id="enableEncryption" checked><br><br>
+
+    <!-- Export Buttons -->
+    <h3>Export Transcription:</h3>
+    <button id="exportPDFButton">Export as PDF</button><br><br>
+    <button id="exportDOCXButton">Export as DOCX</button><br><br>
+    <button id="exportTXTButton">Export as TXT</button><br><br>
+
+    <script src="script.js"></script>
+</body>
+</html>
